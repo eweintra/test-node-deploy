@@ -1,0 +1,23 @@
+{
+  "name": "node-deploy",
+  "scripts": {},
+  "env": {
+    "MONGO_URL": {
+      "required": true
+    },
+    "NG_CMD": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
